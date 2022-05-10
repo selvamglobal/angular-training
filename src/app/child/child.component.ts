@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
 
 
 @Component({
@@ -7,11 +7,11 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
-
+child = '';
   @Input() dataFromParent:string='';
   @Input() anotherdataFromParent:string='';
   @Output() dataFromChild = new EventEmitter<string>()
-
+  // @ViewChild(childInput) child:ElementRef
 
 
 

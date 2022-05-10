@@ -1,4 +1,4 @@
-<app-product> Fridge 
+<!-- <app-product> Fridge 
 <p Description> Fridge with two door </p>
 <p Price> Rs. 100</p>
 </app-product>
@@ -11,4 +11,31 @@
 <app-product> Fan</app-product>
 <app-product> Mobile </app-product>
 
-<app-parent></app-parent>
+<app-parent></app-parent> -->
+<!-- <app-header></app-header>
+<app-main> -->
+ <!-- {{usersList | json}} -->
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Profile Picture</th>
+      <th>Date Created</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of usersList">
+      <td>{{item.id }}}</td>
+      <td>{{item.name}}</td>
+      <td><img src="{{item.avatar}}" alt=""></td>
+      <td>{{item.createdAt}}</td>
+      <td>{{item.age}}</td>
+    </tr>
+  </tbody>
+</table>
+ 
+<!-- </app-main>
+<app-footer></app-footer> -->

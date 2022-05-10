@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding: 0;
+}
+app-header{
+    height: 200px;
+    width: 100vw;
+    display: block;
+    background-color: black;
+    color:white;
+}
+app-footer{
+    height: 100px;
+    width: 100vw;
+    display: block;
+    background-color: green;
+    color:white;
+ 
+}
+app-main{
+    height: 500px;
+    width: 100vw;
+    display: block;
+    background-color: blue;
+    color:white;
+    display: flex;
+    flex-grow: 1 1;
+}
+app-sidebar{
+    background-color: red;
+    height: 500px;
+  flex: 1;
+    
+}
+app-content{
+    background-color: yellow;
+    height: 500px;
+     flex: 3;
+    color:black;
+}
